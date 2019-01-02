@@ -2,7 +2,7 @@ package de.weihnachten;
 
 public class Geschenk extends GewichtigesWeihnachtsObjekt {
 
-	Geschenk(){
+	public void Geschenk(){
 		
 	}
 	

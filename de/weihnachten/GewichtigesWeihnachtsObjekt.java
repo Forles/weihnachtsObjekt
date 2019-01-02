@@ -2,7 +2,7 @@ package de.weihnachten;
 
 public class GewichtigesWeihnachtsObjekt {
 	
-	int gewicht;
+	static int gewicht;
 	
 	public int getGewicht(){
 		this.gewicht = getGewicht();
