@@ -1,12 +1,9 @@
 package de.weihnachten;
 
-public class Weihnachtsmann extends WeihnachtsObjekt {
-    
-
-
-  //Zur Überprüfung der Klasse
-    public static void main(String[] args) {
-        
-        
-    }
+public class Weihnachtsmann {
+	
+	//Zur Überprüfung der Klasse jeweils eine Main 
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
 }
