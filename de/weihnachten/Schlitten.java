@@ -2,16 +2,17 @@ package de.weihnachten;
 
 public class Schlitten {
 	
-	int gewicht;
-	int anzahlRentiere;
-	int geschenke;
+	private int gewicht;
+	private int anzahlRentiere;
+	private int geschenke;
 	
 	public Schlitten(Geschenk[] geschenke, Rentier[] rentiere){
 		
 	}
 	
-	/*public void Geschenk getNaechstesGeschenk(){
+	/*public Geschenk getNaechstesGeschenk(){
 	
+		return Geschenk;
 	}*/
 	
 	public int getGewicht() {
@@ -38,7 +39,7 @@ public class Schlitten {
 	}
 	
 	/*public Rentier getRentier(int index) {
-		this.Rentier = getRentier();
+		
 		return Rentier;
 	}*/
 	

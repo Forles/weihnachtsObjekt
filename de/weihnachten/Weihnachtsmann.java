@@ -1,10 +1,10 @@
 package de.weihnachten;
 
-public class Weihnachtsmann {
+public class Weihnachtsmann extends WeihnachtsObjekt{
 	
-	double futtervorrat;
+	private double futtervorrat;
 	
-	public void Weihnachtsmann(Double futtervorrat , Schlitten schlitten) {
+	public Weihnachtsmann(Double futtervorrat , Schlitten schlitten) {
 		
 	}
 	

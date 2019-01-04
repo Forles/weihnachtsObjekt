@@ -2,10 +2,12 @@ package de.weihnachten;
 
 public class Rentier {
 	
-	double hunger;
-	double gGewicht;
-	Rentier(){
-		
+	private double hunger;
+	private double gGewicht;
+	static int anzahlRentier = 0;
+	
+	public static void rentier(){	
+		WeihnachtsObjekt.scanThings(anzahlRentier);
 	}
 	
 	public double getHunger() {
@@ -25,6 +27,6 @@ public class Rentier {
 	
 	//Zur Überprüfung der Klasse jeweils eine Main 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		System.out.println(anzahlRentier);
 	}
 }

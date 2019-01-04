@@ -1,8 +1,13 @@
 package de.weihnachten;
 
-public class GewichtigesWeihnachtsObjekt {
+public class GewichtigesWeihnachtsObjekt extends WeihnachtsObjekt{
 	
 	static int gewicht;
+	
+	public static int gewichtigesWeihnachtsObjekt(int gewicht){
+		WeihnachtsObjekt.scanThings(gewicht);
+		return gewicht;
+	}
 	
 	public int getGewicht(){
 		this.gewicht = getGewicht();
@@ -13,4 +18,6 @@ public class GewichtigesWeihnachtsObjekt {
 	public static void main(String[] args) {
 		System.out.println("Hello World");
 	}
+
+	
 }
