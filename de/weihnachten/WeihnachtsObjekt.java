@@ -5,39 +5,38 @@ public class WeihnachtsObjekt {
 
 	//Funktion erbt von GewichtigesWeihnachtsObjekt
 	public int getGewicht() {
-		GewichtigesWeihnachtsObjekt.gewicht = getGewicht();
-		return GewichtigesWeihnachtsObjekt.gewicht;
+		return 0;
 	}
 	
-	public static void kannKollidieren(WeihnachtsObjekt object) {
+	public boolean kannKollidieren(WeihnachtsObjekt object) {
 		
+		return false;
 	}
 	
-	public static void scanThings(int eingabe) {
-		java.util.Scanner scanner = new java.util.Scanner(System. in);
-		eingabe = scanner.nextInt();
-	}
+	
 	
 	//Zur Überprüfung der Klasse jeweils eine Main 
 	public static void main(String[] args) {
 	
+		int anzahlRentiere = 0, anzahlGeschenke = 0, futtervorrat = 0;
+		
 		System.out.println("Hallo User"
 				+ "\nBitte gib die Anzahl der Rentiere ein:");
-		Rentier.rentier();
+		anzahlRentiere = XMasUtils.readInt();
 		System.out.println("Wunderbar, vielen Dank! \n"
 				+ "Jetzt teile uns die Anzahl der Geschenke mit:");
-		Geschenk.Geschenk();
+		anzahlGeschenke = XMasUtils.readInt();
 		System.out.println("So viele Geschenke?? Wahnsinn!\n"
 				+ "Als letztes benötigen wir noch den "
 				+ "Futtervorrat für unsere Rentiere!\n"
 				+ "Teile mir den Futtervorrat in Kilogramm mit.");
-		GewichtigesWeihnachtsObjekt.gewichtigesWeihnachtsObjekt(0);
+		futtervorrat = XMasUtils.readInt();
 		System.out.println("Wir starten unser Weihnachten also mit "
-				+ Geschenk.anzahlGeschenke 
+				+ anzahlGeschenke 
 				+ "Geschenken und soviel KG "
-				+ GewichtigesWeihnachtsObjekt.gewicht
+				+ futtervorrat
 				+ " und mit "
-				+ Rentier.anzahlRentier
+				+ anzahlRentiere
 				+ " Rentieren. ");
 		System.out.println("Unser Schlitten wiegt aktuell 85 KG");
 		

@@ -1,18 +1,18 @@
 package de.weihnachten;
 
-public class Rentier {
+public class Rentier extends GewichtigesWeihnachtsObjekt {
 	
 	private double hunger;
 	private double gGewicht;
-	static int anzahlRentier = 0;
 	
-	public static void rentier(){	
-		WeihnachtsObjekt.scanThings(anzahlRentier);
+	public Rentier(){
+		super(80); //(int) XMasUtils.zufallsZahl(100, 200);	
+		
+		this.hunger = 2; //(int) XMasUtils.zufallsZahl(1, 2);	
 	}
 	
 	public double getHunger() {
-		this.hunger = getHunger();
-		return hunger;
+		return this.hunger;
 	}
 	
 	public double getHunger(double gGewicht) {
@@ -21,12 +21,18 @@ public class Rentier {
 	}
 	
 	public String asString() {
-        String weightAsString = "";
-        return weightAsString;
+        
+        return "Das Rentier hat " + this.getHunger() 
+			+ " und ist " + this.getGewicht() + "KG schwer.";
     }
 	
 	//Zur Überprüfung der Klasse jeweils eine Main 
 	public static void main(String[] args) {
-		System.out.println(anzahlRentier);
+		Rentier rudolph = new Rentier();
+		System.out.println(rudolph.asString()); 
+		
+		
 	}
+
+	
 }

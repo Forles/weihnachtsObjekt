@@ -1,13 +1,14 @@
 package de.weihnachten;
 
-public class Schlitten {
+public class Schlitten extends WeihnachtsObjekt{
 	
-	private int gewicht;
-	private int anzahlRentiere;
-	private int geschenke;
+	
+	private Geschenk[] geschenke;
+	private Rentier[] rentiere;
 	
 	public Schlitten(Geschenk[] geschenke, Rentier[] rentiere){
-		
+		this.geschenke = geschenke;
+		this.rentiere = rentiere;
 	}
 	
 	/*public Geschenk getNaechstesGeschenk(){
@@ -15,9 +16,12 @@ public class Schlitten {
 		return Geschenk;
 	}*/
 	
-	public int getGewicht() {
-		this.gewicht = getGewicht();
-		return gewicht;
+	public int getGewicht() {		
+		int gesamtGewicht = 0;
+		for(Geschenk geschenk : geschenke) {
+			gesamtGewicht += geschenk.getGewicht();
+		}
+		return gesamtGewicht;
 	}
 	
 	public boolean kannFliegen() {
@@ -28,14 +32,12 @@ public class Schlitten {
 		return true;
 	}
 	
-	public int getAnzahlRentiere(){
-		this.anzahlRentiere = getAnzahlRentiere();
-		return anzahlRentiere;
+	public int getAnzahlRentiere(){		
+		return this.rentiere.length;
 	}
 	
 	public int getAnzahlGeschenke() {
-		this.geschenke = getAnzahlGeschenke();
-		return geschenke;
+		return this.geschenke.length;
 	}
 	
 	/*public Rentier getRentier(int index) {

@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class Geschenk extends GewichtigesWeihnachtsObjekt {
 
-	static int anzahlGeschenke = 1;
-	private static int zufallsGewicht[] = new int[anzahlGeschenke];
+	//static int anzahlGeschenke = 1;
+	//private static int zufallsGewicht[] = new int[anzahlGeschenke];
 	
-	public static void Geschenk(){
-		WeihnachtsObjekt.scanThings(anzahlGeschenke);
+	public Geschenk(){
+		XMasUtils.readInt(anzahlGeschenke);
 		
 		for(int i = 0; i<= anzahlGeschenke; i++) {
 			Random zufallsZahl = new Random();

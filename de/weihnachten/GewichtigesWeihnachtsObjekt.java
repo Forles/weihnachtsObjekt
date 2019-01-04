@@ -2,16 +2,15 @@ package de.weihnachten;
 
 public class GewichtigesWeihnachtsObjekt extends WeihnachtsObjekt{
 	
-	static int gewicht;
+	private int gewicht;
 	
-	public static int gewichtigesWeihnachtsObjekt(int gewicht){
-		WeihnachtsObjekt.scanThings(gewicht);
-		return gewicht;
+	public GewichtigesWeihnachtsObjekt(int gewicht){
+		this.gewicht = gewicht;
 	}
 	
-	public int getGewicht(){
-		this.gewicht = getGewicht();
-		return gewicht;
+	@Override
+	public int getGewicht() {
+		return this.gewicht;
 	}
 	
 	//Zur Überprüfung der Klasse jeweils eine Main 
