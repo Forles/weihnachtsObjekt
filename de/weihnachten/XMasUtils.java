@@ -13,7 +13,6 @@ public class XMasUtils {
 			
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		int eingabe = scanner.nextInt();
-		scanner.close();
 		
 		return eingabe;
 	}
